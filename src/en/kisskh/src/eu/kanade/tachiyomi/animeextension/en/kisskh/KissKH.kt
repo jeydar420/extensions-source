@@ -129,7 +129,7 @@ class KissKH : AnimeHttpSource() {
         }
         val videoUrl = jObject["Video"]!!.jsonPrimitive.content
 
-        videoList.add(Video(videoUrl, "FirstParty", videoUrl, subtitleTracks = subList, headers = Headers.headersOf("referer", "https://kisskh.me/", "origin", "https://kisskh.me")))
+        videoList.add(Video(videoUrl, "FirstParty", videoUrl, subtitleTracks = subList, headers = Headers.headersOf("referer", "https://kisskh.co/", "origin", "https://kisskh.co")))
 
         return videoList.reversed()
     }
